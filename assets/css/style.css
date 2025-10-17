@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.active{
+    left: 0 !important;
+}
+.cros span:nth-child(1){
+    transform: translateY(10px) rotate(45deg) !important;
+    
+}
+.cros span:nth-child(2){
+    transform: translate(-10px);
+    opacity: 0;
+}
+.cros span:nth-child(3){
+    transform: translateY(-10px) rotate(-45deg) !important;
+    
+}
+
+/* assets/style.css */
+:root {
+  --bg-color: #ffffff;
+  --secondary-bg: #f8fafb;
+  --navbar-bg: #ffffff;
+  --text-color: #044569;
+  --secondary-text: #6b7280;
+  --accent-color: #044569;
+  --button-bg: #044569;
+  --button-text: #ffffff;
+  --hover-bg: #058F48;
+  --primary-color: #044569;    
+  --secondary-color: #058F48;
+}
+
+body.dark-mode {
+  --bg-color: #0a1a1f;
+  --secondary-bg: #1a2a2f;
+  --navbar-bg: #1a2a2f;
+  --text-color: #ffffff;
+  --secondary-text: #b8d4e3;
+  --accent-color: #058F48;
+  --button-bg: #044569;
+  --button-text: #ffffff;
+  --hover-bg: #058F48;
+  --primary-color: #044569;
+  --secondary-color: #058F48;
+}
+
+
+
+.contact-bg-img{
+  background-image: url('../images/png/aboutussec1.jpeg'); 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

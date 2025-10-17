@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/output.css">
+</head>
+
+<body>
+
+   <div class="font-poppins bg-bg lg:my-28 my-20 text-text dark:bg-gray-900 dark:text-gray-100 min-h-screen flex items-center justify-center px-4">
+
+  <main class="w-full max-w-3xl bg-white/40 dark:bg-gray-800/50 backdrop-blur-md shadow-lg rounded-2xl p-6 sm:p-10 border border-gray-200 dark:border-gray-700">
+    
+    
+    <section class="text-center mb-8">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-accent mb-4">🚚 Track Your Shipment</h2>
+
+      <form class="flex flex-col sm:flex-row items-center gap-3 justify-center">
+        <input
+          type="text"
+          name="tracking_number"
+          placeholder="Enter Tracking Number..."
+          value="SHIP-20251001-68DCB51C8E0B9"
+          class="w-full sm:w-[70%] px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-bg-secondary dark:bg-gray-700 text-text dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-accent transition"
+        />
+        <button
+          type="submit"
+          class="px-6 py-2 bg-gradient-to-r from-primary to-secondary text-white font-medium rounded-lg shadow-md hover:opacity-90 transition"
+        >
+          Track
+        </button>
+      </form>
+    </section>
+
+    
+    <div class="mb-10">
+      <h3 class="text-xl font-semibold mb-3 border-b border-gray-300 dark:border-gray-600 pb-2">Shipment Details</h3>
+      <div class="grid sm:grid-cols-2 gap-x-6 gap-y-3 text-sm sm:text-base">
+        <p><strong>Shipment ID:</strong> SHIP-20251001-68DCB51C8E0B9</p>
+        <p><strong>From:</strong> Hisar, HR</p>
+        <p><strong>To:</strong> Varanasi, UP</p>
+        <p><strong>Dimensions:</strong> 150 kg, 15×10×12 m</p>
+        <p><strong>Expected Delivery:</strong> 04 Oct 2025</p>
+        <p><strong>Current Status:</strong> <span class="text-green-500 font-medium">Delivered</span></p>
+        <p><strong>Payment Status:</strong> <span class="text-green-500 font-medium">Paid</span></p>
+      </div>
+    </div>
+
+    
+    <div>
+      <h3 class="text-xl font-semibold mb-3 border-b border-gray-300 dark:border-gray-600 pb-2">Shipment Updates</h3>
+
+      <div class="overflow-x-auto">
+        <table class="min-w-full text-sm sm:text-base border-collapse">
+          <thead>
+            <tr class="bg-gradient-to-r from-primary/80 to-secondary/80 text-white text-left">
+              <th class="px-4 py-3 rounded-tl-lg">Status</th>
+              <th class="px-4 py-3">Step</th>
+              <th class="px-4 py-3">Timestamp</th>
+              <th class="px-4 py-3 rounded-tr-lg">Note</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-200 dark:border-gray-700 hover:bg-bg-secondary dark:hover:bg-gray-700 transition">
+              <td class="px-4 py-3">✅</td>
+              <td class="px-4 py-3">Shipment Pending</td>
+              <td class="px-4 py-3 text-green-500">Completed</td>
+              <td class="px-4 py-3">Shipment created from Hisar, HR</td>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700 hover:bg-bg-secondary dark:hover:bg-gray-700 transition">
+              <td class="px-4 py-3">📦</td>
+              <td class="px-4 py-3">Pick Up Waiting</td>
+              <td class="px-4 py-3 text-yellow-500">Processing</td>
+              <td class="px-4 py-3">Shipment is waiting to be picked up</td>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700 hover:bg-bg-secondary dark:hover:bg-gray-700 transition">
+              <td class="px-4 py-3">🚛</td>
+              <td class="px-4 py-3">In Transit</td>
+              <td class="px-4 py-3 text-orange-500">Pending</td>
+              <td class="px-4 py-3">Shipment will head out soon</td>
+            </tr>
+            <tr class="hover:bg-bg-secondary dark:hover:bg-gray-700 transition">
+              <td class="px-4 py-3">📬</td>
+              <td class="px-4 py-3">Delivered</td>
+              <td class="px-4 py-3 text-green-500">Completed</td>
+              <td class="px-4 py-3">Delivered successfully</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+</div>
+
+
+   
+
+    
+
+        
+        
+    
+</body>
+
+
+</html>

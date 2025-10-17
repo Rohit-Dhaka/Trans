@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class=" dark:bg-gray-900 bg-bg  relative px-2 z-10 py-[26px] ">
+      <div class="container">
+        <div class="flex justify-between items-center">
+          <a
+            href=""
+            class="sm:text-[32px] text-[20px] text-primary font-bold  font-Outfit"
+            >Trans & <span class="text-secondary">Logi</span></a
+          >
+          <div
+            class="menulist max-lg:absolute max-lg:bg-bg max-lg:z-10 max-lg:w-full max-lg:h-screen max-lg:left-[-100%] max-lg:top-0 max-lg:flex max-lg:items-center max-lg:justify-center max-lg:flex-col duration-300 ease-linear"
+          >
+            <ul
+              class="flex font-poppins gap-10 max-lg:flex-col max-lg:items-center"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="relative font-medium inline-block font-poppins text-text hover:text-accent transition duration-300 after:content-[''] after:absolute after:left-1/2 after:bottom-[-2px] after:rounded-lg hover:bg- after:-translate-x-1/2 after:w-0 after:h-[3px] after:bg-gradient-to-r after:from-primary after:to-secondary hover:after:w-full after:transition-all after:duration-500"
+                >
+                  Home
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="relative font-medium inline-block font-poppins text-text hover:text-accent transition duration-300 after:content-[''] after:absolute after:left-1/2 after:bottom-[-2px] after:rounded-lg hover:bg- after:-translate-x-1/2 after:w-0 after:h-[3px] after:bg-gradient-to-r after:from-primary after:to-secondary hover:after:w-full after:transition-all after:duration-500"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="relative font-medium inline-block font-poppins text-text hover:text-accent transition duration-300 after:content-[''] after:absolute after:left-1/2 after:bottom-[-2px] after:rounded-lg hover:bg- after:-translate-x-1/2 after:w-0 after:h-[3px] after:bg-gradient-to-r after:from-primary after:to-secondary hover:after:w-full after:transition-all after:duration-500"
+                >
+                  Services
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="relative font-medium inline-block font-poppins text-text hover:text-accent transition duration-300 after:content-[''] after:absolute after:left-1/2 after:bottom-[-2px] after:rounded-lg hover:bg- after:-translate-x-1/2 after:w-0 after:h-[3px] after:bg-gradient-to-r after:from-primary after:to-secondary hover:after:w-full after:transition-all after:duration-500"
+                >
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="relative font-medium px-2 inline-block font-poppins text-text hover:text-accent transition duration-300 after:content-[''] after:absolute after:left-1/2 after:bottom-[-2px] after:rounded-lg hover:bg- after:-translate-x-1/2 after:w-0 after:h-[3px] after:bg-gradient-to-r after:from-primary after:to-secondary hover:after:w-full after:transition-all after:duration-500"
+                >
+                  Track Shipment
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex gap-3">
+            <button
+              id="dark-toggle"
+              class="h-[50px] w-[50px] text-primary border-solid border-[1px] rounded-full"
+            >
+              <i id="theme-icon" class="fa-solid fa-moon text-[20px]"></i>
+            </button>
+
+            <div class="relative inline-block text-left" id="userMenu">
+              
+              <button
+                id="userButton"
+                class="h-[50px] w-[50px] text-primary border-solid border-[1px] flex items-center justify-center rounded-full dark:text-gray-200 transition"
+              >
+                <i class="fa-solid fa-user text-[20px]"></i>
+              </button>
+
+              
+              <div
+                id="userDropdown"
+                class="hidden absolute z-20 right-0 mt-2 w-48 rounded-xl bg-white/40 dark:bg-gray-800/50 backdrop-blur-md shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden opacity-0 scale-95 transform transition-all duration-300 origin-top-right"
+              >
+                <div
+                  class="p-3 text-sm text-gray-800 dark:text-gray-200 border-b border-gray-200 dark:border-gray-700"
+                >
+                  👋 Hi, <strong>Priyanshu</strong>
+                </div>
+
+                <div
+                  class="flex flex-col text-gray-700 dark:text-gray-300 text-sm"
+                >
+                  <a
+                    href="../User/dashboard.php"
+                    class="px-4 py-2 hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:text-white transition"
+                  >
+                    <i class="fa-solid fa-user"></i> Dashboard
+                  </a>
+                  <a
+                    href="../User/logout.php"
+                    class="px-4 py-2 hover:bg-gradient-to-r hover:from-red-500 hover:to-pink-500 hover:text-white transition"
+                  >
+                    <i class="fa-solid fa-right-from-bracket mr-2"></i> Logout
+                  </a>
+                  <a
+                    href="../User/login.php"
+                    class="px-4 py-2 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white transition"
+                  >
+                    <i class="fa-solid fa-right-to-bracket mr-2"></i> Login
+                  </a>
+                  <a
+                    href="../User/register.php"
+                    class="px-4 py-2 hover:bg-gradient-to-r hover:from-green-500 hover:to-teal-500 hover:text-white transition"
+                  >
+                    <i class="fa-solid fa-user-plus mr-2"></i> Sign Up
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-2 menuicon lg:hidden z-10">
+            <span
+              class="bg-text h-[2px] w-[30px] duration-300 ease-linear rounded-lg inline-block"
+            ></span>
+            <span
+              class="bg-text h-[2px] w-[30px] duration-300 ease-linear rounded-lg inline-block"
+            ></span>
+            <span
+              class="bg-text h-[2px] w-[30px] duration-300 ease-linear rounded-lg inline-block"
+            ></span>
+          </div>
+        </div>
+      </div>
+    </nav> 
+    <section class="relative bg-bg-secondary dark:bg-gray-900 h-[90vh] font-poppins flex items-center">
+  <div class="container ">
+    <div class="flex flex-row flex-wrap mx-[-12px]">
+
+      
+      <div class="w-6/12 px-3">
+        <h1 class="font-Outfit font-bold text-text text-[48px] max-w-[490px] ">
+          Smart, Reliable Transport & Efficient Logistics Solutions
+        </h1>
+        <p class="font-poppins font-medium max-w-[490px] pt-3">
+          Seamless deliveries, modern fleet, and global reach for your business. We ensure your shipments reach safely and on time.
+        </p>
+
+        
+        <div class="">
+          <a href="./services.php" class="">
+            Explore Services
+          </a>
+          <a href="./contact.php" class="">
+            Get a Quote
+          </a>
+        </div>
+      </div>
+
+      
+      <div class="lg:w-6/12 px-3 relative flex justify-center">
+        <img src="./assets/images/png/transperent truck png.png" alt="Transport Truck" class="w-full max-w-lg z-10 relative" />
+
+        <img src="./assets/images/png/pallet image.png" alt="Pallet Box" class="absolute bottom-[10%] right-[30%] w-24 md:w-32 opacity-0 translate-y-5 animate-fade-slide z-0" />
+      </div>
+
+    </div>
+  </div>
+</section>  
+
+    <section>
+        <div class="container py-8">
+            <div class="shadow-2xl py-8  px-4 rounded-2xl">
+                <div class="flex flex-wrap flex-row mx-[-12px] items-center ">
+                    <div class="lg:w-3/12 sm:w-6/12 w-full px-3 lg:pl-0 pl-8 ">
+                         <div
+                  class="flex items-center gap-3 transform hover:scale-105 transition duration-500"
+                >
+                  <i
+                    class="fas fa-phone text-primary text-3xl animate-bounce-slow"
+                  ></i>
+                  <div>
+                    <span
+                      class="block text-text-secondary font-poppins dark:text-gray-400 text-sm"
+                      >Call Us</span
+                    >
+                    <a
+                      href="tel:+917206311599"
+                      class="text-accent  font-poppins font-semibold hover:text-primary transition"
+                      >+91 98765 43210</a
+                    >
+                  </div>
+                </div>
+                    </div>
+                    <div class="lg:w-3/12 sm:w-6/12 w-full px-3 lg:pl-0 pl-8 sm:pt-0 pt-8 ">
+                         <div
+                  class="flex items-center gap-3 transform hover:scale-105 transition duration-500"
+                >
+                  <i
+                    class="fas fa-envelope text-primary text-3xl animate-bounce-slow"
+                  ></i>
+                  <div>
+                    <span
+                      class="block font-poppins text-text-secondary dark:text-gray-400 text-sm"
+                      >Email</span
+                    >
+                    <a
+                      href="mailto:support@translogi.com"
+                      class="text-accent font-poppins font-semibold hover:text-primary transition"
+                      >support@translogi.com</a
+                    >
+                  </div>
+                </div>
+                    </div>
+                    <div class="lg:w-6/12 s w-full px-3 lg:pt-0 pt-8 ">
+                         <div
+                class="w-full  flex flex-col sm:flex-row items-center gap-4 bg-white/10 dark:bg-gray-700/40 p-4 md:p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 backdrop-blur-sm"
+                          >
+                <input
+                  type="text"
+                  id="trackingInput"
+                  placeholder="Enter Track ID"
+                  class="flex-1 px-4 py-3 w-full rounded-lg font-poppins border border-gray-300 dark:border-gray-600 bg-bg dark:bg-gray-700 text-text dark:text-gray-200 placeholder-gray-400 focus:ring-2 focus:ring-primary focus:outline-none transition hover:ring-accent"
+                />
+                <button
+                  class="px-6 py-3 rounded-lg bg-gradient-to-r font-poppins from-primary to-secondary text-white font-semibold hover:scale-105 transition transform duration-300 w-full sm:w-auto"
+                  onclick="trackShipment()"
+                >
+                  Track Now
+                </button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="flex flex-wrap flex-row mx-[-12px] sm:pt-[150px] pt-[80px]">
+          <div class="lg:w-5/12 w-full px-3">
+            <div class="flex gap-2 items-center">
+              <h3 class="font-poppins sm:text-[48px] text-[28px] text-text font-semibold">
+                WHY CHOOSE US
+              </h3>
+              <div
+                class="flex items-center justify-center w-12 h-12 rounded-full bg-primary text-white text-xl shadow-lg"
+              >
+                <i class="fas fa-award"></i>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-7/12 w-full px-3 lg:pt-0 pt-6">
+            <p class="font-poppins font-normal text-text">
+              At Trans & Logi, we are committed to delivering smarter, faster,
+              and more reliable logistics solutions. Our modern fleet, real-time
+              tracking, and customer-first approach ensure your business stays
+              ahead. Trust us to handle your deliveries with precision, care,
+              and unmatched efficiency — because we believe every shipment
+              deserves the gold standard.
+            </p>
+          </div>
+        </div>
+        <div class="sm:pt-[52px] pt-5">
+          <img
+            src="./assets/images/png/aboutussec02.jpg"
+            alt=""
+            class="w-full rounded-2xl"
+          />
+        </div>
+        <div class="flex flex-wrap flex-row mx-[-12px] sm:pt-[52px] pt-5 sm:pb-[152px] pb-[80px]">
+          <div class="md:w-6/12 w-full px-3">
+            <div class="border-[1px] rounded-2xl p-3 border-solid border-text hover:shadow-2xl duration-300">
+              <div class="flex items-center gap-4" >
+                  <div class="text-primary text-2xl bg-gray-200 h-12 w-12 flex items-center justify-center rounded-full ">
+                    <i class="fas fa-shipping-fast"></i>
+                  </div>
+                  <h3 class="text-[24px] font-semibold font-Outfit  text-accent">
+                    Fast Delivery
+                  </h3>
+              </div> 
+                <p class="text-gray-800 font-poppins dark:text-gray-400 text-sm pt-4">
+                    We ensure your goods are delivered on time, every time. Our
+                    streamlined logistics guarantee speed without compromising
+                    on quality.
+                  </p>
+            </div>
+          </div>
+            <div class="md:w-6/12 w-full px-3 md:pt-0 pt-6">
+            <div class="border-[1px] h-full rounded-2xl p-3 border-solid border-text hover:shadow-2xl duration-300">
+              <div class="flex items-center gap-4" >
+                  <div class="text-primary text-2xl bg-gray-200 h-12 w-12 flex items-center justify-center rounded-full ">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <h3 class="text-[24px] font-semibold font-Outfit  text-accent">
+                    Live Tracking
+                  </h3>
+              </div> 
+                <p class="text-gray-800 font-poppins dark:text-gray-400 text-sm pt-4">
+                    Our dedicated support team is available day and night to
+                    answer your questions and solve any issue instantly.
+                  </p>
+            </div>
+          </div>
+          <div class="md:w-6/12 w-full px-3 pt-6">
+            <div class="border-[1px] rounded-2xl p-3 border-solid border-text hover:shadow-2xl duration-300">
+              <div class="flex items-center gap-4" >
+                  <div class="text-primary text-2xl bg-gray-200 h-12 w-12 flex items-center justify-center rounded-full ">
+                    <i class="fas fa-headset"></i>
+                  </div>
+                  <h3 class="text-[24px] font-semibold font-Outfit  text-accent">
+                    24/7 Support
+                  </h3>
+              </div> 
+                <p class="text-gray-800 font-poppins dark:text-gray-400 text-sm pt-4">
+                   Our dedicated support team is available day and night to answer your questions and solve any issue instantly.
+                  </p>
+            </div>
+          </div>
+          <div class="md:w-6/12 w-full px-3 pt-6">
+            <div class="border-[1px] rounded-2xl p-3 border-solid border-text hover:shadow-2xl duration-300">
+              <div class="flex items-center gap-4" >
+                  <div class="text-primary text-2xl bg-gray-200 h-12 w-12 flex items-center justify-center rounded-full ">
+                    <i class="fas fa-globe-americas"></i>
+                  </div>
+                  <h3 class="text-[24px] font-semibold font-Outfit  text-accent">
+                    Global Reach
+                  </h3>
+              </div> 
+                <p class="text-gray-800 font-poppins dark:text-gray-400 text-sm pt-4">
+                   Delivering worldwide with ease, we connect businesses and customers across borders with reliable global logistics.
+                  </p>
+            </div>
+          </div>
+          <div class="md:w-6/12 w-full px-3 pt-6">
+            <div class="border-[1px] rounded-2xl p-3 border-solid border-text hover:shadow-2xl duration-300">
+              <div class="flex items-center gap-4" >
+                  <div class="text-primary text-2xl bg-gray-200 h-12 w-12 flex items-center justify-center rounded-full ">
+                    <i class="fas fa-shield-alt"></i>
+                  </div>
+                  <h3 class="text-[24px] font-semibold font-Outfit  text-accent">
+                    Safe Handling
+                  </h3>
+              </div> 
+                <p class="text-gray-800 font-poppins dark:text-gray-400 text-sm pt-4">
+                   Your packages are handled with the utmost care, ensuring they arrive securely and in perfect condition every time.
+                  </p>
+            </div>
+          </div>
+          <div class="md:w-6/12 w-full px-3 pt-6">
+            <div class="border-[1px] rounded-2xl p-3 border-solid border-text hover:shadow-2xl duration-300">
+              <div class="flex items-center gap-4" >
+                  <div class="text-primary text-2xl bg-gray-200 h-12 w-12 flex items-center justify-center rounded-full ">
+                    <i class="fas fa-dollar-sign"></i>
+                  </div>
+                  <h3 class="text-[24px] font-semibold font-Outfit  text-accent">
+                    Reasonable Price
+                  </h3>
+              </div> 
+                <p class="text-gray-800 font-poppins dark:text-gray-400 text-sm pt-4">
+                   We offer highly competitive rates with no hidden costs, giving you premium service at a price that fits your budget.
+                  </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+ 
+
+    <section>
+        <div class="container">
+              <div class="flex items-center justify-center gap-4 sm:pt-[120px] pt-[80px] flex-wrap">
+      <div class="font-Outfit font-semibold  text-text  sm:text-[42px] text-[28px]">OUR SERVICES</div>
+      <div class="flex items-center justify-center w-12 h-12 rounded-full bg-primary text-white text-xl shadow-lg">
+        <i class="fas fa-handshake"></i>
+      </div>
+    </div>
+     <p class="text-center font-poppins text-text pt-4">
+      Providing end-to-end logistics solutions with speed, reliability, and global reach.
+    </p>
+            <div class="flex flex-wrap flex-row mx-[-12px] sm:pb-[150px] pb-[80px] pt-[30px]">
+                <div class="lg:w-3/12 sm:w-6/12 w-full px-3">
+                    <div class="border rounded-lg px-5 pb-5 pt-[25px] h-full hover:shadow-xl duration-300">
+                        <div class="flex justify-between items-center">
+                            <i class="fas fa-shipping-fast text-text text-[32px]"></i>
+                            <img src="./assets/images/svg/one.svg" alt="">
+                        </div>
+                        <h5 class="font-Outfit font-medium text-text text-[24px] py-[15px]">Freight Forwarding</h5>
+                        <p class="font-poppins font-normal text-text">End-to-end freight solutions with optimized routes, reliable schedules, and complete shipment visibility across air, sea, and land.</p>
+                    </div>
+                </div>
+                  <div class="lg:w-3/12 sm:w-6/12 w-full sm:pt-0 pt-3 px-3">
+                    <div class="border rounded-lg px-5 pb-5 pt-[25px] h-full hover:shadow-xl duration-300">
+                        <div class="flex justify-between items-center">
+                            <i class="fas fa-warehouse text-text text-[32px]"></i>
+                            
+                            <img src="./assets/images/svg/two.svg" alt="">
+                        </div>
+                        <h5 class="font-Outfit font-medium text-text text-[24px] py-[15px]">Warehousing & Distribution</h5>
+                        <p class="font-poppins font-normal text-text">Secure storage facilities and streamlined distribution hubs to keep your supply chain efficient and cost-effective.</p>
+                    </div>
+                </div>
+                  <div class="lg:w-3/12 sm:w-6/12 w-full lg:pt-0 pt-3 px-3">
+                    <div class="border rounded-lg px-5 pb-5 pt-[25px] h-full hover:shadow-xl duration-300">
+                        <div class="flex justify-between items-center">
+                            <i class="fas fa-truck text-text text-[32px]"></i>
+                            <img src="./assets/images/svg/three.svg" alt="">
+                        </div>
+                        <h5 class="font-Outfit font-medium text-text text-[24px] py-[15px]">Last-Mile Delivery</h5>
+                        <p class="font-poppins font-normal text-text">Fast, accurate, and trackable last-mile services that ensure packages reach customers on time, every time.</p>
+                    </div>
+                </div>
+                  <div class="lg:w-3/12 sm:w-6/12 w-full lg:pt-0 pt-3 px-3">
+                    <div class="border rounded-lg px-5 pb-5 pt-[25px] h-full hover:shadow-xl duration-300">
+                        <div class="flex justify-between items-center">
+                            
+                            <i class="fas fa-network-wired text-text text-[32px]"></i>
+                            <img src="./assets/images/svg/four.svg" alt="">
+                        </div>
+                        <h5 class="font-Outfit font-medium text-text text-[24px] py-[15px]">Supply Chain Management</h5>
+                        <p class="font-poppins font-normal text-text">Smart logistics planning powered by technology — from inventory control to real-time tracking, we keep your operations seamless.</p>
+                    </div>
+                </div>
+                                
+
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container">
+                      <div class="flex items-center justify-center gap-4 sm:pt-[120px] pt-[80px] flex-wrap">
+      <div class="font-Outfit font-semibold  text-text  sm:text-[42px] text-[28px]">OUR ACHIEVEMENTS</div>
+      <div class="flex items-center justify-center w-12 h-12 rounded-full bg-primary text-white text-xl shadow-lg">
+        <i class="fas fa-trophy"></i>
+      </div>
+    </div>
+     <p class="text-center font-poppins text-text pt-4">
+      Trusted globally for delivering excellence in logistics.
+    </p>
+
+            <div class="flex flex-wrap flex-row mx-[-12px] pt-[60px] sm:pb-[150px] pb-[80px]">
+                <div class="md:w-3/12 sm:w-6/12 w-full px-3">
+                    <div class=" border shadow-md flex flex-col items-center py-[25px] px-2  hover:shadow-2xl duration-300 h-full">
+                        <div class=" w-[70px] h-[70px] flex items-center justify-center bg-gray-50 rounded-full">
+                            <i class="fas fa-truck text-[32px]"></i>
+                        </div>
+                        <h5 class=" font-bold font-Outfit text-[38px] py-2">500+</h5>
+                        <p class=" font-medium font-poppins text-center ">Deliveries Completed</p>
+                        
+                    </div>
+                </div>
+                  <div class="md:w-3/12 sm:w-6/12 w-full sm:pt-0  pt-3 px-3">
+                    <div class=" border shadow-md flex flex-col items-center py-[25px] px-2  hover:shadow-2xl duration-300 h-full">
+                        <div class=" w-[70px] h-[70px] flex items-center justify-center bg-gray-50 rounded-full">
+                            <i class="fas fa-clock text-[32px]"></i>
+                        </div>
+                        <h5 class=" font-bold font-Outfit text-[38px] py-2">10</h5>
+                        <p class=" font-medium font-poppins  text-center">Years of Experience</p>
+                        
+                    </div>
+                </div>
+                  <div class="md:w-3/12 sm:w-6/12 w-full md:pt-0  pt-3 px-3">
+                    <div class=" border shadow-md flex flex-col items-center py-[25px] px-2  hover:shadow-2xl duration-300 h-full">
+                        <div class=" w-[70px] h-[70px] flex items-center justify-center bg-gray-50 rounded-full">
+                            <i class="fas  fa-handshake text-[32px]"></i>
+                        </div>
+                        <h5 class=" font-bold font-Outfit text-[38px] py-2">20+</h5>
+                        <p class=" font-medium font-poppins text-center">Global Partners</p>
+                        
+                    </div>
+                </div>
+                  <div class="md:w-3/12 sm:w-6/12 w-full md:pt-0  pt-3 px-3">
+                    <div class=" border shadow-md flex flex-col items-center py-[25px] px-2  hover:shadow-2xl duration-300 h-full">
+                        <div class=" w-[70px] h-[70px] flex items-center justify-center bg-gray-50 rounded-full">
+                            <i class="fas  fa-users text-[32px]"></i>
+                        </div>
+                        <h5 class=" font-bold font-Outfit text-[38px] py-2">400+</h5>
+                        <p class=" font-medium font-poppins text-center">Happy Clients</p>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+  >
+    <section class="py-16 px-6 md:px-12 bg-bg-secondary dark:bg-gray-900 font-poppins relative overflow-hidden">
+  <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 items-start">
+    
+    
+    <div class="w-full lg:w-1/2 space-y-6">
+      
+      <div class="space-y-2 text-center lg:text-left">
+        <h2 class="text-primary font-semibold text-sm md:text-base tracking-widest">Shippes</h2>
+        <h3 class="text-3xl md:text-4xl font-bold text-accent">Our Shipping Process</h3>
+      </div>
+
+      
+      <div class="space-y-4">
+        
+        <a href="#" class="process-card bg-bg dark:bg-gray-800 p-6 rounded-xl shadow-lg flex items-start gap-4 transform transition duration-500 hover:scale-105 opacity-0 translate-x-[-50px]">
+          <div class="text-primary font-bold text-2xl">01</div>
+          <div class="flex-1">
+            <h6 class="text-xl font-semibold text-accent">Full Truckload</h6>
+            <p class="text-text-secondary dark:text-gray-400 text-sm">Shipping ground? We help you get ahead.</p>
+          </div>
+          <div class="text-primary text-xl mt-1"><i class="fas fa-arrow-right"></i></div>
+        </a>
+
+        
+        <a href="#" class="process-card bg-bg dark:bg-gray-800 p-6 rounded-xl shadow-lg flex items-start gap-4 transform transition duration-500 hover:scale-105 opacity-0 translate-x-[-50px]">
+          <div class="text-primary font-bold text-2xl">02</div>
+          <div class="flex-1">
+            <h6 class="text-xl font-semibold text-accent">Less than Truckload</h6>
+            <p class="text-text-secondary dark:text-gray-400 text-sm">Flexible shipping for smaller loads with full tracking.</p>
+          </div>
+          <div class="text-primary text-xl mt-1"><i class="fas fa-arrow-right"></i></div>
+        </a>
+
+        
+        <a href="#" class="process-card bg-bg dark:bg-gray-800 p-6 rounded-xl shadow-lg flex items-start gap-4 transform transition duration-500 hover:scale-105 opacity-0 translate-x-[-50px]">
+          <div class="text-primary font-bold text-2xl">03</div>
+          <div class="flex-1">
+            <h6 class="text-xl font-semibold text-accent">Warehousing</h6>
+            <p class="text-text-secondary dark:text-gray-400 text-sm">Secure storage and smooth distribution for your goods.</p>
+          </div>
+          <div class="text-primary text-xl mt-1"><i class="fas fa-arrow-right"></i></div>
+        </a>
+
+        
+        <a href="#" class="process-card bg-bg dark:bg-gray-800 p-6 rounded-xl shadow-lg flex items-start gap-4 transform transition duration-500 hover:scale-105 opacity-0 translate-x-[-50px]">
+          <div class="text-primary font-bold text-2xl">04</div>
+          <div class="flex-1">
+            <h6 class="text-xl font-semibold text-accent">Last Mile Delivery</h6>
+            <p class="text-text-secondary dark:text-gray-400 text-sm">Ensuring your packages reach customers on time.</p>
+          </div>
+          <div class="text-primary text-xl mt-1"><i class="fas fa-arrow-right"></i></div>
+        </a>
+      </div>
+    </div>
+
+    
+    <div class="w-full lg:w-1/2 relative flex justify-center lg:justify-end">
+      <div class="relative">
+        
+        <img src="./assets/images/png/container.webp" alt="Container" class="rounded-xl shadow-lg w-full max-w-md sticky top-32">
+        
+        <img src="https://swiftline.vamtam.com/wp-content/uploads/2024/09/truck-il.svg" alt="Truck" class="absolute -bottom-24 left-1/2 transform -translate-x-1/2 w-3/4 md:w-full max-w-xl">
+      </div>
+    </div>
+  </div>
+</section> 
+    <section class="relative py-20 bg-gradient-to-br from-bg-secondary via-white to-bg dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 font-poppins">
+  <div class="container mx-auto  flex flex-col lg:flex-row gap-12 items-start">
+
+    
+    <form class="w-full lg:w-2/3 bg-white/70 dark:bg-gray-800/60 backdrop-blur-xl border border-gray-100 dark:border-gray-700 sm:p-10 p-6 sm:rounded-3xl rounded-xl shadow-xl space-y-6 transition-all duration-300 hover:shadow-2xl" action="form_submit.php" method="POST">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-2">Request a Free Quote</h2>
+        <p class="text-text-secondary dark:text-gray-400">Get a customized transport & logistics solution — fast, safe, and affordable.</p>
+      </div>
+
+      
+    
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+  <div class="relative">
+    <i class="fa-solid fa-user absolute left-3 top-3 text-secondary"></i>
+    <input type="text" name="name" placeholder="Full Name" required 
+      class="w-full pl-10 border border-gray-300 dark:border-gray-600 focus:border-primary focus:ring-1 focus:ring-primary rounded-lg bg-bg py-2 px-3 outline-none text-text dark:text-gray-300 transition-all duration-200">
+  </div>
+
+  <div class="relative">
+    <i class="fa-solid fa-envelope absolute left-3 top-3 text-secondary"></i>
+    <input type="email" name="email" placeholder="Email" required 
+      class="w-full pl-10 border border-gray-300 dark:border-gray-600 focus:border-primary focus:ring-1 focus:ring-primary rounded-lg bg-bg py-2 px-3 outline-none text-text dark:text-gray-300 transition-all duration-200">
+  </div>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+  <div class="relative">
+    <i class="fa-solid fa-phone absolute left-3 top-3 text-secondary"></i>
+    <input type="text" name="phone" placeholder="Phone Number" required 
+      class="w-full pl-10 border border-gray-300 dark:border-gray-600 focus:border-primary focus:ring-1 focus:ring-primary rounded-lg bg-bg py-2 px-3 outline-none text-text dark:text-gray-300 transition-all duration-200">
+  </div>
+
+  <div class="relative">
+    <i class="fa-solid fa-truck-fast absolute left-3 top-3 text-secondary"></i>
+    <select name="type" required 
+      class="w-full pl-10 border border-gray-300 dark:border-gray-600 focus:border-primary focus:ring-1 focus:ring-primary rounded-lg bg-bg py-2 px-3 outline-none text-text dark:text-gray-300 appearance-none transition-all duration-200">
+      <option value="" disabled selected>Shipment Type</option>
+      <option>Air</option>
+      <option>Sea</option>
+      <option>Road</option>
+      <option>Express</option>
+    </select>
+  </div>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+  <div class="relative">
+    <i class="fa-solid fa-location-dot absolute left-3 top-3 text-secondary"></i>
+    <input type="text" name="pickup" placeholder="Pickup Location" required 
+      class="w-full pl-10 border border-gray-300 dark:border-gray-600 focus:border-primary focus:ring-1 focus:ring-primary rounded-lg bg-bg py-2 px-3 outline-none text-text dark:text-gray-300 transition-all">
+  </div>
+
+  <div class="relative">
+    <i class="fa-solid fa-flag-checkered absolute left-3 top-3 text-secondary"></i>
+    <input type="text" name="destination" placeholder="Destination" required 
+      class="w-full pl-10 border border-gray-300 dark:border-gray-600 focus:border-primary focus:ring-1 focus:ring-primary rounded-lg bg-bg py-2 px-3 outline-none text-text dark:text-gray-300 transition-all">
+  </div>
+</div>
+
+<div class="relative">
+  <i class="fa-solid fa-globe absolute left-3 top-3 text-secondary"></i>
+  <select name="country" required 
+    class="w-full pl-10 border border-gray-300 dark:border-gray-600 focus:border-primary focus:ring-1 focus:ring-primary rounded-lg bg-bg py-2 px-3 outline-none text-text dark:text-gray-300 appearance-none transition-all">
+    <option value="" disabled selected>Select Country</option>
+    <option>India</option>
+    <option>Australia</option>
+    <option>New Zealand</option>
+    <option>Dubai</option>
+    <option>USA</option>
+    <option>Canada</option>
+    <option>UK</option>
+  </select>
+</div>
+
+<div class="relative">
+  <i class="fa-solid fa-weight-scale absolute left-3 top-3 text-secondary"></i>
+  <input type="text" name="cargo" placeholder="Cargo Weight / Details" required 
+    class="w-full pl-10 border border-gray-300 dark:border-gray-600 focus:border-primary focus:ring-1 focus:ring-primary rounded-lg bg-bg py-2 px-3 outline-none text-text dark:text-gray-300 transition-all">
+</div>
+
+<div class="relative">
+  <i class="fa-solid fa-message absolute left-3 top-3 text-secondary"></i>
+  <textarea name="message" placeholder="Message / Special Instructions" required rows="4" 
+    class="w-full pl-10 border border-gray-300 dark:border-gray-600 focus:border-primary focus:ring-1 focus:ring-primary rounded-lg bg-bg py-2 px-3 outline-none text-text dark:text-gray-300 transition-all"></textarea>
+</div>
+
+
+      <button type="submit" class="w-full py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-xl hover:scale-[1.02] hover:shadow-lg transition-transform duration-300">
+        🚚 Get My Quote
+      </button>
+    </form>
+
+    
+    <div class="w-full lg:w-1/3 bg-white/70 dark:bg-gray-800/60 backdrop-blur-lg border border-gray-100 dark:border-gray-700 sm:p-8 p-6 rounded-3xl shadow-xl space-y-6 sticky top-24 transition-all duration-300 hover:shadow-2xl">
+      <div class="text-2xl font-bold text-primary flex items-center gap-2">Contact Info</div>
+
+      <div class="space-y-4 text-text-secondary dark:text-gray-400">
+        <p class="flex items-center gap-3"><i class="fas fa-phone text-primary"></i> +91 8009 054294</p>
+        <p class="flex items-center gap-3"><i class="fas fa-envelope text-primary"></i> info@transandlogi.com</p>
+        <p class="flex items-center gap-3"><i class="fas fa-location-dot text-primary"></i> Global HQ — New Delhi, India</p>
+      </div>
+
+      <iframe class="w-full h-52 rounded-xl border-none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111497.07331445793!2d75.67313705902447!3d29.156315708276757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391232d8011d0c37%3A0x1d3f0df105af1178!2sHisar%2C%20Haryana!5e0!3m2!1sen!2sin!4v1760681632770!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+
+      <div class="flex flex-wrap gap-2 text-sm text-white mt-4">
+        <span class="bg-primary px-3 py-1 rounded-full">India</span>
+        <span class="bg-secondary px-3 py-1 rounded-full">Australia</span>
+        <span class="bg-primary px-3 py-1 rounded-full">New Zealand</span>
+        <span class="bg-secondary px-3 py-1 rounded-full">Dubai</span>
+        <span class="bg-primary px-3 py-1 rounded-full">USA</span>
+        <span class="bg-secondary px-3 py-1 rounded-full">Canada</span>
+        <span class="bg-primary px-3 py-1 rounded-full">UK</span>
+      </div>
+    </div>
+
+  </div>
+</section> 
+
+    <footer class="bg-black">
+      <div class="container">
+        <div class="flex flex-wrap flex-row mx-[-12px] pt-[90px] sm:pb-[150px] pb-[80px]">
+          <div class="lg:w-4/12 w-full px-3">
+            <a href="" class="font-poppins sm:text-[38px] text-[32px] text-white font-bold"
+              >Trans & Logi</a
+            >
+
+            <p class="font-poppins font-normal text-bg pt-2 max-w-[380px]">
+              Connecting Continents. Delivering Trust. Trans & Logi ensures
+              seamless logistics across the globe — from air, sea, road, to
+              express delivery. Our mission is to make cargo movement
+              <span class="font-semibold">smarter, faster, and safer</span>.
+            </p>
+            <div class=" pt-[24px] flex gap-2">
+              <a
+                href="#"
+                class="hover:text-blue-500 text-bg border w-[32px] flex items-center justify-center h-[32px] hover:scale-105 hover:border-blue-500 rounded-full transition"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                href="#"
+                class="hover:text-blue-400 text-bg border w-[32px] flex items-center justify-center h-[32px] hover:scale-105 hover:border-blue-400 rounded-full transition"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a
+                href="#"
+                class="hover:text-sky-400 text-bg border w-[32px] flex items-center justify-center h-[32px] hover:scale-105 hover:border-sky-400 rounded-full transition"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a
+                href="#"
+                class="hover:text-pink-500 text-bg border w-[32px] flex items-center justify-center h-[32px] hover:scale-105 hover:border-pink-500 rounded-full transition"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="lg:w-3/12 sm:w-6/12 w-full lg:pt-0 pt-12 flex  lg:justify-center px-3">
+            <ul class="flex flex-col sm:gap-5 gap-3">
+                <li class=" font-poppins text-white font-medium text-[18px]">Quick Links</li>
+                <li><a href="" class="font-poppins text-white font-normal text-[16px]">Home</a></li>
+                <li><a href="" class="font-poppins text-white font-normal text-[16px]">About Us</a></li>
+                <li><a href="" class="font-poppins text-white font-normal text-[16px]">Services</a></li>
+                <li><a href="" class="font-poppins text-white font-normal text-[16px]">Track Shipment</a></li>
+                <li><a href="" class="font-poppins text-white font-normal text-[16px]">Contact</a></li>
+            </ul>
+          </div>
+          <div class="lg:w-2/12 sm:w-6/12 w-full lg:pt-0 pt-12 flex lg:justify-start px-3">
+             <ul class="flex flex-col sm:gap-5 gap-3">
+                <li class=" font-poppins text-white font-medium text-[18px]">Our Services</li>
+                <li><a href="" class="font-poppins text-white font-normal text-[16px]">Air Freight</a></li>
+                <li><a href="" class="font-poppins text-white font-normal text-[16px]">Sea Freight</a></li>
+                <li><a href="" class="font-poppins text-white font-normal text-[16px]">Road Transport</a></li>
+                <li><a href="" class="font-poppins text-white font-normal text-[16px]">Express Delivery</a></li>
+                <li><a href="" class="font-poppins text-white font-normal text-[16px]">Warehousing</a></li>
+            </ul>
+          </div>
+          <div class="lg:w-3/12 sm:w-6/12 w-full lg:pt-0 pt-12 px-3">
+              <ul class="flex flex-col sm:gap-5 gap-3">
+                <li class=" font-poppins text-white font-medium text-[18px]">Contact Us</li>
+                
+                <li class="flex gap-2 items-center"><i class="fa-solid fa-phone text-white"></i><a href="tel:+" class="font-poppins text-white font-normal text-[16px]">+91 72063-11599</a></li>
+                <li class="flex gap-2 items-center"><i class="fa-regular fa-envelope text-white"></i><a href="mailto:" class="font-poppins text-white font-normal text-[16px]">info@transandlogi.com</a></li>
+                <li class="flex gap-2 items-center"><i class="fa-solid fa-location-dot text-white"></i><a href="" class="font-poppins text-white font-normal text-[16px]">Global HQ — New Delhi, India</a></li>
+                                
+            </ul>
+          </div>
+        </div>
+      </div>
+        <div
+        class="border-t border-gray-700 py-4 text-center text-sm text-gray-500"
+      >
+        © 2025 <span class="text-white font-poppins font-semibold">Trans & Logi</span>. All
+        Rights Reserved.
+      </div>
+    </footer> 
+
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
