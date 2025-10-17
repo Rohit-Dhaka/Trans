@@ -2,19 +2,22 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/output.css">
-     <link
+    <title>Trans & Logi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+
 </head>
 
+
 <body>
-   <nav
+ <nav
       class="dark:bg-gray-900 bg-bg relative px-2 z-10 sm:py-[26px] py-[13px]"
     >
       <div class="container">
@@ -146,93 +149,176 @@
       </div>
     </nav>
 
- <div class="font-poppins bg-bg lg:my-28 my-20 text-text dark:bg-gray-900 dark:text-gray-100 min-h-screen flex items-center justify-center px-4">
+  <!-- ✅ Page Hero Section -->
+<section class="relative contact-bg-img bg-cover bg-center text-white py-32 flex flex-col items-center justify-center text-center">
+  <div class="absolute inset-0 bg-black/60"></div>
 
-  <main class="w-full max-w-3xl bg-white/40 dark:bg-gray-800/50 backdrop-blur-md shadow-lg rounded-2xl p-6 sm:p-10 border border-gray-200 dark:border-gray-700">
-    
-    <!-- Header -->
-    <section class="text-center mb-8">
-      <h2 class="text-2xl sm:text-3xl font-semibold text-accent mb-4">🚚 Track Your Shipment</h2>
+  <!-- Breadcrumb -->
+  <nav class="relative z-10 mb-4 text-sm ">
+    <ol class="flex justify-center sm:absolute top-0 left-0 space-x-2 text-gray-300">
+      <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+      <li>/</li>
+      <li><span class="text-white">Services</span></li>
+    </ol>
+  </nav>
 
-      <form class="flex flex-col sm:flex-row items-center gap-3 justify-center">
-        <input
-          type="text"
-          name="tracking_number"
-          placeholder="Enter Tracking Number..."
-          value="SHIP-20251001-68DCB51C8E0B9"
-          class="w-full sm:w-[70%] px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-bg-secondary dark:bg-gray-700 text-text dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-accent transition"
-        />
-        <button
-          type="submit"
-          class="px-6 py-2 bg-gradient-to-r from-primary to-secondary text-white font-medium rounded-lg shadow-md hover:opacity-90 transition"
-        >
-          <i class="fas fa-magnifying-glass mr-2"></i> Track
-        </button>
-      </form>
-    </section>
+  <!-- Content -->
+  <div class="relative z-10 max-w-3xl mx-auto">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Our Services</h1>
+    <p class="text-lg text-gray-200 leading-relaxed">
+      Discover the full spectrum of logistics solutions — air, sea, road,
+      warehousing, and express delivery. Each service is engineered to
+      provide speed, efficiency, and a competitive edge for your business.
+    </p>
+  </div>
+</section>
 
-    <!-- Shipment Details -->
-    <div class="mb-10">
-      <h3 class="text-xl font-semibold mb-3 border-b border-gray-300 dark:border-gray-600 pb-2">Shipment Details</h3>
-      <div class="grid sm:grid-cols-2 gap-x-6 gap-y-3 text-sm sm:text-base">
-        <p><strong><i class="fas fa-barcode mr-1"></i>Shipment ID:</strong> SHIP-20251001-68DCB51C8E0B9</p>
-        <p><strong><i class="fas fa-location-dot mr-1"></i>From:</strong> Hisar, HR</p>
-        <p><strong><i class="fas fa-location-dot mr-1"></i>To:</strong> Varanasi, UP</p>
-        <p><strong><i class="fas fa-weight-scale mr-1"></i>Dimensions:</strong> 150 kg, 15×10×12 m</p>
-        <p><strong><i class="fas fa-calendar-days mr-1"></i>Expected Delivery:</strong> 04 Oct 2025</p>
-        <p><strong><i class="fas fa-truck-fast mr-1"></i>Current Status:</strong> <span class="text-green-500 font-medium">Delivered</span></p>
-        <p><strong><i class="fas fa-credit-card mr-1"></i>Payment Status:</strong> <span class="text-green-500 font-medium">Paid</span></p>
-      </div>
-    </div>
-
-    <!-- Shipment Updates -->
+<!-- ✅ Services Split Section -->
+<section class="flex flex-col md:flex-row">
+  <!-- Left Text -->
+  <div class="bg-gray-50 md:w-1/2 flex items-center justify-center p-10 md:p-16">
     <div>
-      <h3 class="text-xl font-semibold mb-3 border-b border-gray-300 dark:border-gray-600 pb-2">Shipment Updates</h3>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Our Services</h2>
+      <p class="text-gray-600 mb-4">
+        At <strong>Trans & Logi</strong>, our services go far beyond the simple movement of goods —
+        we create seamless connections that empower businesses to thrive in a fast-paced global market.
+      </p>
+      <p class="text-gray-600">
+        With Trans & Logi, you don’t just get a service provider — you
+        gain a strategic logistics partner dedicated to moving your business forward
+        with confidence, precision, and global reach.
+      </p>
+    </div>
+  </div>
 
-      <div class="overflow-x-auto">
-        <table class="min-w-full text-sm sm:text-base border-collapse">
-          <thead>
-            <tr class="bg-gradient-to-r from-primary/80 to-secondary/80 text-white text-left">
-              <th class="px-4 py-3 rounded-tl-lg">Status</th>
-              <th class="px-4 py-3">Step</th>
-              <th class="px-4 py-3">Timestamp</th>
-              <th class="px-4 py-3 rounded-tr-lg">Note</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="border-b border-gray-200 dark:border-gray-700 hover:bg-bg-secondary dark:hover:bg-gray-700 transition">
-              <td class="px-4 py-3"><i class="fas fa-circle-check text-green-500"></i></td>
-              <td class="px-4 py-3"><i class="fas fa-file-invoice mr-2 text-blue-500"></i>Shipment Pending</td>
-              <td class="px-4 py-3 text-green-500">Completed</td>
-              <td class="px-4 py-3">Shipment created from Hisar, HR</td>
-            </tr>
-            <tr class="border-b border-gray-200 dark:border-gray-700 hover:bg-bg-secondary dark:hover:bg-gray-700 transition">
-              <td class="px-4 py-3"><i class="fas fa-box-open text-yellow-500"></i></td>
-              <td class="px-4 py-3"><i class="fas fa-truck mr-2 text-yellow-500"></i>Pick Up Waiting</td>
-              <td class="px-4 py-3 text-yellow-500">Processing</td>
-              <td class="px-4 py-3">Shipment is waiting to be picked up</td>
-            </tr>
-            <tr class="border-b border-gray-200 dark:border-gray-700 hover:bg-bg-secondary dark:hover:bg-gray-700 transition">
-              <td class="px-4 py-3"><i class="fas fa-truck-fast text-orange-500"></i></td>
-              <td class="px-4 py-3"><i class="fas fa-route mr-2 text-orange-500"></i>In Transit</td>
-              <td class="px-4 py-3 text-orange-500">Pending</td>
-              <td class="px-4 py-3">Shipment will head out soon</td>
-            </tr>
-            <tr class="hover:bg-bg-secondary dark:hover:bg-gray-700 transition">
-              <td class="px-4 py-3"><i class="fas fa-envelope-open-text text-green-500"></i></td>
-              <td class="px-4 py-3"><i class="fas fa-box-check mr-2 text-green-500"></i>Delivered</td>
-              <td class="px-4 py-3 text-green-500">Completed</td>
-              <td class="px-4 py-3">Delivered successfully</td>
-            </tr>
-          </tbody>
-        </table>
+  <!-- Right Grid -->
+  <div class="bg-white md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6 p-10 md:p-16">
+    <div class="border rounded-xl p-6 shadow hover:shadow-lg transition">
+      <i class="fas fa-plane text-indigo-600 text-3xl mb-4"></i>
+      <h3 class="text-xl font-semibold mb-2">Air Freight</h3>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        Fast, secure, and reliable global air freight solutions with efficient customs handling.
+      </p>
+    </div>
+
+    <div class="border rounded-xl p-6 shadow hover:shadow-lg transition">
+      <i class="fas fa-ship text-indigo-600 text-3xl mb-4"></i>
+      <h3 class="text-xl font-semibold mb-2">Sea Freight</h3>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        Affordable and scalable sea shipping with flexible routing and global partnerships.
+      </p>
+    </div>
+
+    <div class="border rounded-xl p-6 shadow hover:shadow-lg transition">
+      <i class="fas fa-truck text-indigo-600 text-3xl mb-4"></i>
+      <h3 class="text-xl font-semibold mb-2">Road Transport</h3>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        On-time and safe road transport powered by optimized routes and GPS tracking.
+      </p>
+    </div>
+
+    <div class="border rounded-xl p-6 shadow hover:shadow-lg transition">
+      <i class="fas fa-warehouse text-indigo-600 text-3xl mb-4"></i>
+      <h3 class="text-xl font-semibold mb-2">Warehousing</h3>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        Smart, secure storage solutions with tech-enabled inventory management.
+      </p>
+    </div>
+
+    <div class="border rounded-xl p-6 shadow hover:shadow-lg transition">
+      <i class="fas fa-bolt text-indigo-600 text-3xl mb-4"></i>
+      <h3 class="text-xl font-semibold mb-2">Express Delivery</h3>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        Ultra-fast, door-to-door express delivery with real-time tracking.
+      </p>
+    </div>
+
+    <div class="border rounded-xl p-6 shadow hover:shadow-lg transition">
+      <i class="fas fa-globe text-indigo-600 text-3xl mb-4"></i>
+      <h3 class="text-xl font-semibold mb-2">Supply Chain</h3>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        End-to-end supply chain solutions tailored for efficiency and scale.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ✅ Industries We Serve -->
+<section class="py-20 bg-gray-50 text-center">
+  <div class="max-w-5xl mx-auto mb-12">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">Industries We Serve</h2>
+    <p class="text-gray-600">
+      From global giants to niche innovators, Trans & Logi powers critical industries with seamless logistics
+      that redefine reliability and scale.
+    </p>
+  </div>
+
+  <!-- Carousel -->
+  <div class="relative max-w-6xl mx-auto flex items-center">
+    <button class="absolute left-0 text-indigo-600 text-2xl hover:text-indigo-800">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <div class="flex overflow-x-auto gap-6 px-10 snap-x scroll-smooth">
+      <div class="min-w-[250px] bg-white rounded-xl shadow p-6 snap-center">
+        <div class="text-indigo-600 text-4xl mb-4"><i class="fas fa-car"></i></div>
+        <h3 class="font-semibold text-lg mb-2">Automotive</h3>
+        <p class="text-gray-600 text-sm">Efficient supply chains for OEMs and parts globally.</p>
+      </div>
+
+      <div class="min-w-[250px] bg-white rounded-xl shadow p-6 snap-center">
+        <div class="text-indigo-600 text-4xl mb-4"><i class="fas fa-pills"></i></div>
+        <h3 class="font-semibold text-lg mb-2">Pharma</h3>
+        <p class="text-gray-600 text-sm">Cold-chain logistics ensuring compliance and safety.</p>
+      </div>
+
+      <div class="min-w-[250px] bg-white rounded-xl shadow p-6 snap-center">
+        <div class="text-indigo-600 text-4xl mb-4"><i class="fas fa-shopping-bag"></i></div>
+        <h3 class="font-semibold text-lg mb-2">Retail</h3>
+        <p class="text-gray-600 text-sm">Fast-moving distribution for global retail cycles.</p>
+      </div>
+
+      <div class="min-w-[250px] bg-white rounded-xl shadow p-6 snap-center">
+        <div class="text-indigo-600 text-4xl mb-4"><i class="fas fa-microchip"></i></div>
+        <h3 class="font-semibold text-lg mb-2">Technology</h3>
+        <p class="text-gray-600 text-sm">Secure delivery of high-value tech & electronics.</p>
+      </div>
+
+      <div class="min-w-[250px] bg-white rounded-xl shadow p-6 snap-center">
+        <div class="text-indigo-600 text-4xl mb-4"><i class="fas fa-industry"></i></div>
+        <h3 class="font-semibold text-lg mb-2">Manufacturing</h3>
+        <p class="text-gray-600 text-sm">Uninterrupted global flow of materials & machinery.</p>
       </div>
     </div>
 
-  </main>
-</div>
+    <button class="absolute right-0 text-indigo-600 text-2xl hover:text-indigo-800">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+</section>
 
-    <footer class="bg-black">
+<!-- ✅ Global Network Section -->
+<section class="py-20 bg-white text-center">
+  <div class="max-w-5xl mx-auto mb-10">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Global Network</h2>
+    <p class="text-gray-600">
+      With strong hubs across continents, Trans & Logi connects businesses worldwide with seamless logistics
+      solutions, ensuring reliability, scale, and trust.
+    </p>
+  </div>
+
+  <!-- Map -->
+  <div class="relative w-full h-[500px] bg-map  bg-cover bg-center mx-auto max-w-6xl rounded-lg shadow">
+    <div class="absolute w-3 h-3 bg-indigo-600 rounded-full top-[40%] left-[70.5%]" title="India — Central Asian Hub"></div>
+    <div class="absolute w-3 h-3 bg-indigo-600 rounded-full top-[48%] left-[62%]" title="Dubai — Gateway to Middle East"></div>
+    <div class="absolute w-3 h-3 bg-indigo-600 rounded-full top-[19%] left-[47%]" title="UK — European Distribution"></div>
+    <div class="absolute w-3 h-3 bg-indigo-600 rounded-full top-[28%] left-[20.5%]" title="USA — North American Powerhouse"></div>
+    <div class="absolute w-3 h-3 bg-indigo-600 rounded-full top-[10%] left-[21%]" title="Canada — Northern Trade Hub"></div>
+    <div class="absolute w-3 h-3 bg-indigo-600 rounded-full top-[75%] left-[86%]" title="Australia — Oceania Gateway"></div>
+    <div class="absolute w-3 h-3 bg-indigo-600 rounded-full top-[90%] left-[96%]" title="New Zealand — Strategic Oceania Hub"></div>
+  </div>
+</section>
+<footer class="bg-black">
       <div class="container">
         <div
           class="flex flex-wrap flex-row mx-[-12px] pt-[90px] sm:pb-[150px] pb-[80px]"
@@ -403,17 +489,13 @@
         All Rights Reserved.
       </div>
     </footer>
-    <script src="./assets/js/app.js"></script>
 
 
-   
 
-    
 
-        
-        
-    
+<script src="./assets/js/app.js"></script>
+
+
 </body>
-
 
 </html>
