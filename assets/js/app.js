@@ -65,3 +65,36 @@ cards.forEach(card => observer.observe(card));
 
 
 
+
+ const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      speed: 800,
+      slidesPerView: 3,
+      spaceBetween: 20,
+
+      // ✅ Responsive breakpoints
+      breakpoints: {
+        0: {
+          slidesPerView: 1, // mobile
+        },
+        640: {
+          slidesPerView: 2, // tablet
+        },
+        1024: {
+          slidesPerView: 3, // desktop
+        },
+      },
+
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
